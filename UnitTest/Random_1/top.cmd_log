@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/Kmeans/top.xst" -ofn "D:/project/soc/Kmeans/Kmeans/top.syr" 
