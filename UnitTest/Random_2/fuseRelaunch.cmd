@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/project/soc/Kmeans/Random_2/Random2/Random_2_tb_isim_beh.exe" -prj "D:/project/soc/Kmeans/Random_2/Random2/Random_2_tb_beh.prj" "work.Random_2_tb" "work.glbl" 
