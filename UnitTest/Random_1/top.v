@@ -195,6 +195,7 @@ always @(state)begin
   endcase
 end
 
+//¶Ã¼Æ²£¥Í
 always @(posedge Random1_clk or negedge Random1_rst)begin
   if(~Random1_rst)
       ram1<=32'd0;  
