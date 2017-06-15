@@ -51,6 +51,7 @@ reg flag,switchFlag;
 reg [3:0]state;                   //轉態暫存器
 parameter idle=3'd0, beginRandom=3'd1, ifRepeat=3'd2, savetoBuf=3'd3,toBlockRam=3'd4, waitState=3'd5, End=3'd6;   
 
+//除頻
 always @(posedge Random1_clk or negedge Random1_rst ) begin
 
   if(~Random1_rst)
@@ -59,6 +60,7 @@ always @(posedge Random1_clk or negedge Random1_rst ) begin
       divclkcnt<=divclkcnt+1;
 end
 
+//取得亂數種子
 always @(posedge Random1_clk or negedge Random1_rst)begin
   if(~Random1_rst)
     seedcnt<=32'd0;
@@ -66,6 +68,7 @@ always @(posedge Random1_clk or negedge Random1_rst)begin
     seedcnt<=seedcnt+1;
 end
 
+//主程式 FSM--Meely 
 always @(posedge Random1_clk or negedge Random1_rst)begin
   if(~Random1_rst)begin
       state <= idle;
@@ -128,6 +131,7 @@ always @(posedge Random1_clk or negedge Random1_rst)begin
   end
 end
 
+//主程式 FSM--Moore 
 always @(state)begin 
   case(state)
 	   idle:begin
