@@ -159,15 +159,15 @@ always @(state)begin
 			 SampleY[0]<=1;
 			 SampleY[1]<=1;
 			 SampleY[2]<=1;
-			 SampleY[3]<=ram1[2]^ram1[11];
-			 SampleY[4]<=ram1[22]^ram1[7];
-			 SampleY[5]<=ram1[26]^ram1[10];
-			 SampleY[6]<=ram1[21]^ram1[8];
-			 SampleY[7]<=ram1[16]^ram1[24];
-			 SampleY[8]<=ram1[13]^ram1[15];
-			 SampleY[9]<=ram1[7]^ram1[17];
-			 SampleY[10]<=ram1[11]^ram1[4];
-			 SampleY[11]<=ram1[26]^ram1[20];
+			 SampleY[3]<=ram1[2]^ram1[11]^ram1[31];
+			 SampleY[4]<=ram1[22]^ram1[7]^ram1[10];
+			 SampleY[5]<=ram1[26]^ram1[10]^ram1[1];
+			 SampleY[6]<=ram1[21]^ram1[8]^ram1[0];
+			 SampleY[7]<=ram1[16]^ram1[24]^ram1[21];
+			 SampleY[8]<=ram1[13]^ram1[15]^ram1[27];
+			 SampleY[9]<=ram1[7]^ram1[17]^ram1[5];
+			 SampleY[10]<=ram1[11]^ram1[4]^ram1[8];
+			 SampleY[11]<=ram1[26]^ram1[20]^ram1[13];
 		end
 	   savetoBuf:begin
 		    valueX[SampleCnt] <= SampleX;                   //將資料存入陣列
