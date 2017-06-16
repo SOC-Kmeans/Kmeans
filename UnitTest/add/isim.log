@@ -1,0 +1,33 @@
+ISim log file
+Running: D:\project\soc\Kmeans\add\add_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/project/soc/Kmeans/add/add_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+        50ns monitor: a=        50 b=        13 sum=        63
+       100ns monitor: a=        50 b=        13 sum=        63
+       150ns monitor: a=        50 b=        13 sum=        63
+       200ns monitor: a=       105 b=       256 sum=       361
+       250ns monitor: a=       105 b=       256 sum=       361
+       300ns monitor: a=       105 b=       256 sum=       361
+       350ns monitor: a=       105 b=       256 sum=       361
+       400ns monitor: a=       105 b=       256 sum=       361
+       450ns monitor: a=       105 b=       256 sum=       361
+       500ns monitor: a=       105 b=       256 sum=       361
+       550ns monitor: a=       105 b=       256 sum=       361
+       600ns monitor: a=       105 b=       256 sum=       361
+       650ns monitor: a=       105 b=       256 sum=       361
+       700ns monitor: a=       105 b=       256 sum=       361
+       750ns monitor: a=       105 b=       256 sum=       361
+       800ns monitor: a=       105 b=       256 sum=       361
+       850ns monitor: a=       105 b=       256 sum=       361
+       900ns monitor: a=       105 b=       256 sum=       361
+       950ns monitor: a=       105 b=       256 sum=       361
+      1000ns monitor: a=       105 b=       256 sum=       361
