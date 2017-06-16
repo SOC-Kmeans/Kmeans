@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/division/Calculation_div.xst" -ofn "D:/project/soc/Kmeans/division/Calculation_div.syr" 
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/division/Calculation_div.xst" -ofn "D:/project/soc/Kmeans/division/Calculation_div.syr" 
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/division/Calculation_div.xst" -ofn "D:/project/soc/Kmeans/division/Calculation_div.syr" 
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/division/Calculation_div.xst" -ofn "D:/project/soc/Kmeans/division/Calculation_div.syr" 

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/division/div_rill.xst" -ofn "D:/project/soc/Kmeans/division/div_rill.syr" 
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/division/div_rill.xst" -ofn "D:/project/soc/Kmeans/division/div_rill.syr" 
