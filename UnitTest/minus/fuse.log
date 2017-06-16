@@ -1,0 +1,21 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/project/soc/Kmeans/minus/minus_tb_isim_beh.exe -prj D:/project/soc/Kmeans/minus/minus_tb_beh.prj work.minus_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/project/soc/Kmeans/minus/Calculation_minus.v" into library work
+Analyzing Verilog file "D:/project/soc/Kmeans/minus/minus_tb.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module fa
+Compiling module rccfulladder
+Compiling module Calculation_minus
+Compiling module minus_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable D:/project/soc/Kmeans/minus/minus_tb_isim_beh.exe
+Fuse Memory Usage: 28528 KB
+Fuse CPU Usage: 405 ms
