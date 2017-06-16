@@ -56,8 +56,20 @@ module minus_tb;
       #200 inputX = 32'd103;
 		     inputY = 32'd86;
 			  
-      #200 inputX = 32'd86;
-		     inputY = 32'd100;
+      #200 inputX = 32'd124;
+		     inputY = 32'd40;
+			  
+      #200 inputX = 32'd536;
+		     inputY = 32'd464;
+			  
+      #200 inputX = 32'd834;
+		     inputY = 32'd21;
+			  
+      #200 inputX = 32'd416;
+		     inputY = 32'd87;
+			  
+      #200 inputX = 32'd369;
+		     inputY = 32'd167;
 		// Add stimulus here
 
 	end

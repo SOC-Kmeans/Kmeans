@@ -127,7 +127,7 @@ Elaborating module <fa>.
 
 Synthesizing Unit <Calculation_minus>.
     Related source file is "D:\project\soc\Kmeans\minus\Calculation_minus.v".
-    Found 2-bit adder for signal <n0075[1:0]> created at line 30.
+    Found 2-bit adder for signal <n0013[1:0]> created at line 30.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <Calculation_minus> synthesized.
@@ -150,8 +150,8 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  2-bit adder                                           : 1
-# Xors                                                 : 96
- 1-bit xor2                                            : 95
+# Xors                                                 : 65
+ 1-bit xor2                                            : 64
  32-bit xor2                                           : 1
 
 =========================================================================
@@ -167,8 +167,8 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  2-bit adder                                           : 1
-# Xors                                                 : 96
- 1-bit xor2                                            : 95
+# Xors                                                 : 65
+ 1-bit xor2                                            : 64
  32-bit xor2                                           : 1
 
 =========================================================================
@@ -212,13 +212,13 @@ Top Level Output File Name         : Calculation_minus.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 96
+# BELS                             : 65
 #      LUT3                        : 17
 #      LUT5                        : 47
-#      LUT6                        : 32
-# IO Buffers                       : 161
+#      LUT6                        : 1
+# IO Buffers                       : 130
 #      IBUF                        : 65
-#      OBUF                        : 96
+#      OBUF                        : 65
 
 Device utilization summary:
 ---------------------------
@@ -227,19 +227,19 @@ Selected Device : 7z020clg484-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   96  out of  53200     0%  
-    Number used as Logic:                96  out of  53200     0%  
+ Number of Slice LUTs:                   65  out of  53200     0%  
+    Number used as Logic:                65  out of  53200     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     96
-   Number with an unused Flip Flop:      96  out of     96   100%  
-   Number with an unused LUT:             0  out of     96     0%  
-   Number of fully used LUT-FF pairs:     0  out of     96     0%  
+ Number of LUT Flip Flop pairs used:     65
+   Number with an unused Flip Flop:      65  out of     65   100%  
+   Number with an unused LUT:             0  out of     65     0%  
+   Number of fully used LUT-FF pairs:     0  out of     65     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                         162
- Number of bonded IOBs:                 161  out of    200    80%  
+ Number of bonded IOBs:                 130  out of    200    65%  
 
 Specific Feature Utilization:
 
@@ -274,7 +274,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.760ns
+   Maximum combinational path delay: 8.658ns
 
 Timing Details:
 ---------------
@@ -282,13 +282,13 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 5344 / 96
+  Total number of paths / destination ports: 2244 / 65
 -------------------------------------------------------------------------
-Delay:               8.760ns (Levels of Logic = 19)
+Delay:               8.658ns (Levels of Logic = 19)
   Source:            inputY<1> (PAD)
-  Destination:       sum<31> (PAD)
+  Destination:       sum<0> (PAD)
 
-  Data Path: inputY<1> to sum<31>
+  Data Path: inputY<1> to sum<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -307,13 +307,13 @@ Delay:               8.760ns (Levels of Logic = 19)
      LUT5:I2->O            4   0.043   0.442  m1/fa24/cout1 (cout_23_OBUF)
      LUT5:I2->O            4   0.043   0.442  m1/fa26/cout1 (cout_25_OBUF)
      LUT5:I2->O            4   0.043   0.442  m1/fa28/cout1 (cout_27_OBUF)
-     LUT5:I2->O           35   0.043   0.451  m1/fa30/cout1 (cout_29_OBUF)
-     LUT5:I3->O            2   0.043   0.554  m1/fa32/Mxor_s_xo<0>1 (s_31_OBUF)
-     LUT6:I0->O            1   0.043   0.279  sum<31>11 (sum_31_OBUF)
-     OBUF:I->O                 0.000          sum_31_OBUF (sum<31>)
+     LUT5:I2->O            4   0.043   0.357  m1/fa30/cout1 (cout_29_OBUF)
+     LUT3:I1->O            2   0.043   0.546  m1/fa31/cout1 (cout_30_OBUF)
+     LUT6:I1->O            1   0.043   0.279  sum<0>1 (sum_0_OBUF)
+     OBUF:I->O                 0.000          sum_0_OBUF (sum<0>)
     ----------------------------------------
-    Total                      8.760ns (0.731ns logic, 8.029ns route)
-                                       (8.3% logic, 91.7% route)
+    Total                      8.658ns (0.731ns logic, 7.927ns route)
+                                       (8.4% logic, 91.6% route)
 
 =========================================================================
 
@@ -324,11 +324,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.66 secs
+Total CPU time to Xst completion: 8.57 secs
  
 --> 
 
-Total memory usage is 410460 kilobytes
+Total memory usage is 410468 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

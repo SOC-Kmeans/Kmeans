@@ -52,9 +52,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497606042" xil_pn:in_ck="-8903196184412629085" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1497606041">
+    <transform xil_pn:end_ts="1497609128" xil_pn:in_ck="-8903196184412629085" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1497609128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Calculation_minus.v"/>
       <outfile xil_pn:name="minus_tb.v"/>
     </transform>
@@ -70,16 +74,24 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497606042" xil_pn:in_ck="-8903196184412629085" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1497606042">
+    <transform xil_pn:end_ts="1497609128" xil_pn:in_ck="-8903196184412629085" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1497609128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Calculation_minus.v"/>
       <outfile xil_pn:name="minus_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1497606044" xil_pn:in_ck="-8903196184412629085" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1537336075030922834" xil_pn:start_ts="1497606042">
+    <transform xil_pn:end_ts="1497609131" xil_pn:in_ck="-8903196184412629085" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1537336075030922834" xil_pn:start_ts="1497609128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -88,9 +100,10 @@
       <outfile xil_pn:name="minus_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1497606044" xil_pn:in_ck="-3272685863167873072" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1342860193443631349" xil_pn:start_ts="1497606044">
+    <transform xil_pn:end_ts="1497609131" xil_pn:in_ck="-3272685863167873072" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1342860193443631349" xil_pn:start_ts="1497609131">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -125,10 +138,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497605996" xil_pn:in_ck="5789552615730646366" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-2238723390027375840" xil_pn:start_ts="1497605985">
+    <transform xil_pn:end_ts="1497609080" xil_pn:in_ck="5789552615730646366" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-2238723390027375840" xil_pn:start_ts="1497609069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Calculation_minus.lso"/>
       <outfile xil_pn:name="Calculation_minus.ngc"/>
       <outfile xil_pn:name="Calculation_minus.ngr"/>
