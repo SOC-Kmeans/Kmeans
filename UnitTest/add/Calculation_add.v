@@ -4,12 +4,16 @@
 // Engineer: 
 // 
 // Create Date:    16:05:01 06/16/2017 
-// Design Name: 
+// Design Name:    ChenDung,Liao
 // Module Name:    Calculation_add 
-// Project Name: 
+// Project Name:   Kmeans
 // Target Devices: 
 // Tool versions: 
 // Description: 
+//                 output [31:0] s,cout;   //s->相加結果, cout->進位
+//                 input add_clk;          
+//                 input [31:0]a, b;       //a為X座標, b為Y座標
+//                 input cin;              
 //
 // Dependencies: 
 //
