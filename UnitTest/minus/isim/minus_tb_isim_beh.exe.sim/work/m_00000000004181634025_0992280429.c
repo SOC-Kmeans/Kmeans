@@ -25,7 +25,7 @@ static const char *ng0 = "D:/project/soc/Kmeans/minus/Calculation_minus.v";
 
 
 
-static void Cont_113_0(char *t0)
+static void Cont_114_0(char *t0)
 {
     char t5[8];
     char t20[8];
@@ -81,7 +81,7 @@ LAB0:    t1 = (t0 + 2848U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(113, ng0);
+LAB2:    xsi_set_current_line(114, ng0);
     t2 = (t0 + 1368U);
     t3 = *((char **)t2);
     t2 = (t0 + 1528U);
@@ -157,7 +157,7 @@ LAB7:    t31 = *((unsigned int *)t20);
 
 }
 
-static void Cont_114_1(char *t0)
+static void Cont_115_1(char *t0)
 {
     char t5[8];
     char t40[8];
@@ -293,7 +293,7 @@ LAB0:    t1 = (t0 + 3096U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(114, ng0);
+LAB2:    xsi_set_current_line(115, ng0);
     t2 = (t0 + 1368U);
     t3 = *((char **)t2);
     t2 = (t0 + 1528U);
@@ -480,7 +480,7 @@ LAB13:    t97 = *((unsigned int *)t85);
 
 extern void work_m_00000000004181634025_0992280429_init()
 {
-	static char *pe[] = {(void *)Cont_113_0,(void *)Cont_114_1};
+	static char *pe[] = {(void *)Cont_114_0,(void *)Cont_115_1};
 	xsi_register_didat("work_m_00000000004181634025_0992280429", "isim/minus_tb_isim_beh.exe.sim/work/m_00000000004181634025_0992280429.didat");
 	xsi_register_executes(pe);
 }
