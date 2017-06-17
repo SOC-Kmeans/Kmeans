@@ -5,7 +5,7 @@ SOC-projcet Design <br>
  
  <二>UnitTest      <br>
     	<a href="https://github.com/edittest/Kmeans/tree/master/UnitTest"> 1.UnitTest </a> --- Test Writing<br>
-        <ul>
-								<li>Coffee</li>
-        <li>Milk</li>
-        </ul>
+	<ol>
+	<li>Coffee</li>
+	<li>Milk</li>
+	</ol>
