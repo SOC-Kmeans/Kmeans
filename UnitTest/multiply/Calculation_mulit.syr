@@ -1,0 +1,860 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Calculation_mulit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Calculation_mulit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Calculation_mulit"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg484
+
+---- Source Options
+Top Module Name                    : Calculation_mulit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\project\soc\Kmeans\multiply\Calculation_mulit.v" into library work
+Parsing module <Calculation_mulit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Calculation_mulit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Calculation_mulit>.
+    Related source file is "D:\project\soc\Kmeans\multiply\Calculation_mulit.v".
+    Found 32-bit register for signal <stored0>.
+    Found 32-bit register for signal <stored1>.
+    Found 32-bit register for signal <stored2>.
+    Found 32-bit register for signal <stored3>.
+    Found 32-bit register for signal <stored4>.
+    Found 32-bit register for signal <stored5>.
+    Found 32-bit register for signal <stored6>.
+    Found 32-bit register for signal <stored7>.
+    Found 32-bit register for signal <stored8>.
+    Found 32-bit register for signal <stored9>.
+    Found 32-bit register for signal <stored10>.
+    Found 32-bit register for signal <stored11>.
+    Found 32-bit register for signal <stored12>.
+    Found 32-bit register for signal <stored13>.
+    Found 32-bit register for signal <stored14>.
+    Found 32-bit register for signal <stored15>.
+    Found 32-bit register for signal <add01>.
+    Found 32-bit register for signal <add23>.
+    Found 32-bit register for signal <add45>.
+    Found 32-bit register for signal <add67>.
+    Found 32-bit register for signal <add89>.
+    Found 32-bit register for signal <add1011>.
+    Found 32-bit register for signal <add1213>.
+    Found 32-bit register for signal <add1415>.
+    Found 32-bit register for signal <mul_out>.
+    Found 32-bit register for signal <mul_out01>.
+    Found 32-bit register for signal <mul_out23>.
+    Found 32-bit register for signal <mul_out45>.
+    Found 32-bit register for signal <mul_out67>.
+    Found 32-bit adder for signal <stored1[31]_stored0[31]_add_16_OUT> created at line 111.
+    Found 32-bit adder for signal <stored3[31]_stored2[31]_add_17_OUT> created at line 112.
+    Found 32-bit adder for signal <stored5[31]_stored4[31]_add_18_OUT> created at line 113.
+    Found 32-bit adder for signal <stored7[31]_stored6[31]_add_19_OUT> created at line 114.
+    Found 32-bit adder for signal <stored9[31]_stored8[31]_add_20_OUT> created at line 115.
+    Found 32-bit adder for signal <stored11[31]_stored10[31]_add_21_OUT> created at line 116.
+    Found 32-bit adder for signal <stored13[31]_stored12[31]_add_22_OUT> created at line 117.
+    Found 32-bit adder for signal <stored15[31]_stored14[31]_add_23_OUT> created at line 118.
+    Found 32-bit adder for signal <add01[31]_add23[31]_add_24_OUT> created at line 120.
+    Found 32-bit adder for signal <add45[31]_add67[31]_add_25_OUT> created at line 121.
+    Found 32-bit adder for signal <add89[31]_add1011[31]_add_26_OUT> created at line 122.
+    Found 32-bit adder for signal <add1213[31]_add1415[31]_add_27_OUT> created at line 123.
+    Found 32-bit adder for signal <n0211> created at line 125.
+    Found 32-bit adder for signal <n0214> created at line 125.
+    Found 32-bit adder for signal <mul_out01[31]_mul_out67[31]_add_30_OUT> created at line 125.
+    Summary:
+	inferred  15 Adder/Subtractor(s).
+	inferred 928 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Calculation_mulit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 32-bit adder                                          : 15
+# Registers                                            : 29
+ 32-bit register                                       : 29
+# Multiplexers                                         : 16
+ 32-bit 2-to-1 multiplexer                             : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Calculation_mulit>.
+	The following adders/subtractors are grouped into adder tree <Madd_mul_out01[31]_mul_out67[31]_add_30_OUT1> :
+ 	<Madd_n0211> in block <Calculation_mulit>, 	<Madd_n0214> in block <Calculation_mulit>, 	<Madd_mul_out01[31]_mul_out67[31]_add_30_OUT> in block <Calculation_mulit>.
+Unit <Calculation_mulit> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 32-bit adder                                          : 12
+# Adder Trees                                          : 1
+ 32-bit / 4-inputs adder tree                          : 1
+# Registers                                            : 928
+ Flip-Flops                                            : 928
+# Multiplexers                                         : 16
+ 32-bit 2-to-1 multiplexer                             : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <stored10_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored10_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored11_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored8_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored9_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_12> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored13_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_12> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_13> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_14> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored15_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_12> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_13> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored14_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored12_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_18> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_19> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored2_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_19> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored3_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_16> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_17> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_18> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_19> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored0_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_17> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_18> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_19> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored1_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored6_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored7_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored4_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stored5_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add89_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add67_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_13> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_12> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1415_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1213_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add23_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_19> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add01_18> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add1011_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add45_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_21> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_22> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_23> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_25> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_26> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_27> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_29> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_30> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out01_31> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_0> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_1> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_2> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_3> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_4> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_5> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_6> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_7> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_8> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_9> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_10> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out67_11> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Calculation_mulit> ...
+WARNING:Xst:1710 - FF/Latch <mul_out01_20> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out23_24> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mul_out45_28> (without init value) has a constant value of 0 in block <Calculation_mulit>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Calculation_mulit, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 512
+ Flip-Flops                                            : 512
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Calculation_mulit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1086
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 28
+#      LUT2                        : 456
+#      LUT3                        : 31
+#      LUT4                        : 31
+#      MUXCY                       : 258
+#      XORCY                       : 280
+# FlipFlops/Latches                : 512
+#      FDC                         : 432
+#      FDE                         : 80
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 65
+#      IBUF                        : 33
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             512  out of  106400     0%  
+ Number of Slice LUTs:                  547  out of  53200     1%  
+    Number used as Logic:               547  out of  53200     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    593
+   Number with an unused Flip Flop:      81  out of    593    13%  
+   Number with an unused LUT:            46  out of    593     7%  
+   Number of fully used LUT-FF pairs:   466  out of    593    78%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          66
+ Number of bonded IOBs:                  66  out of    200    33%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+mulit_clk                          | BUFGP                  | 512   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.449ns (Maximum Frequency: 408.313MHz)
+   Minimum input arrival time before clock: 1.149ns
+   Maximum output required time after clock: 0.511ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mulit_clk'
+  Clock period: 2.449ns (frequency: 408.313MHz)
+  Total number of paths / destination ports: 25039 / 256
+-------------------------------------------------------------------------
+Delay:               2.449ns (Levels of Logic = 23)
+  Source:            mul_out45_12 (FF)
+  Destination:       mul_out_31 (FF)
+  Source Clock:      mulit_clk rising
+  Destination Clock: mulit_clk rising
+
+  Data Path: mul_out45_12 to mul_out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.232   0.343  mul_out45_12 (mul_out45_12)
+     LUT2:I0->O            1   0.043   0.000  ADDERTREE_INTERNAL_Madd1_lut<12> (ADDERTREE_INTERNAL_Madd1_lut<12>)
+     MUXCY:S->O            1   0.230   0.000  ADDERTREE_INTERNAL_Madd1_cy<12> (ADDERTREE_INTERNAL_Madd1_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<13> (ADDERTREE_INTERNAL_Madd1_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<14> (ADDERTREE_INTERNAL_Madd1_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<15> (ADDERTREE_INTERNAL_Madd1_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<16> (ADDERTREE_INTERNAL_Madd1_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<17> (ADDERTREE_INTERNAL_Madd1_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<18> (ADDERTREE_INTERNAL_Madd1_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<19> (ADDERTREE_INTERNAL_Madd1_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<20> (ADDERTREE_INTERNAL_Madd1_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<21> (ADDERTREE_INTERNAL_Madd1_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<22> (ADDERTREE_INTERNAL_Madd1_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<23> (ADDERTREE_INTERNAL_Madd1_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<24> (ADDERTREE_INTERNAL_Madd1_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<25> (ADDERTREE_INTERNAL_Madd1_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<26> (ADDERTREE_INTERNAL_Madd1_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<27> (ADDERTREE_INTERNAL_Madd1_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  ADDERTREE_INTERNAL_Madd1_cy<28> (ADDERTREE_INTERNAL_Madd1_cy<28>)
+     XORCY:CI->O           2   0.251   0.293  ADDERTREE_INTERNAL_Madd1_xor<29> (ADDERTREE_INTERNAL_Madd_291)
+     LUT3:I2->O            1   0.043   0.289  ADDERTREE_INTERNAL_Madd229 (ADDERTREE_INTERNAL_Madd229)
+     LUT4:I3->O            1   0.043   0.000  ADDERTREE_INTERNAL_Madd2_lut<0>30 (ADDERTREE_INTERNAL_Madd2_lut<0>30)
+     MUXCY:S->O            0   0.230   0.000  ADDERTREE_INTERNAL_Madd2_cy<0>_29 (ADDERTREE_INTERNAL_Madd2_cy<0>30)
+     XORCY:CI->O           1   0.251   0.000  ADDERTREE_INTERNAL_Madd2_xor<0>_30 (ADDERTREE_INTERNAL_Madd_312)
+     FDC:D                    -0.001          mul_out_31
+    ----------------------------------------
+    Total                      2.449ns (1.523ns logic, 0.926ns route)
+                                       (62.2% logic, 37.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mulit_clk'
+  Total number of paths / destination ports: 1024 / 768
+-------------------------------------------------------------------------
+Offset:              1.149ns (Levels of Logic = 2)
+  Source:            mulit_rst (PAD)
+  Destination:       stored0_0 (FF)
+  Destination Clock: mulit_clk rising
+
+  Data Path: mulit_rst to stored0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            81   0.000   0.394  mulit_rst_IBUF (mulit_rst_IBUF)
+     INV:I->O            432   0.053   0.447  mulit_rst_inv251_INV_0 (mulit_rst_inv)
+     FDC:CLR                   0.255          stored0_0
+    ----------------------------------------
+    Total                      1.149ns (0.308ns logic, 0.841ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mulit_clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.511ns (Levels of Logic = 1)
+  Source:            mul_out_31 (FF)
+  Destination:       mul_out<31> (PAD)
+  Source Clock:      mulit_clk rising
+
+  Data Path: mul_out_31 to mul_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.232   0.279  mul_out_31 (mul_out_31)
+     OBUF:I->O                 0.000          mul_out_31_OBUF (mul_out<31>)
+    ----------------------------------------
+    Total                      0.511ns (0.232ns logic, 0.279ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock mulit_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mulit_clk      |    2.449|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.38 secs
+ 
+--> 
+
+Total memory usage is 411612 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  416 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Calculation_mulit.twx Calculation_mulit.ncd -o
+Calculation_mulit.twr Calculation_mulit.pcf
+
+Design file:              Calculation_mulit.ncd
+Physical constraint file: Calculation_mulit.pcf
+Device,package,speed:     xc7z020,clg484,C,-3 (PRELIMINARY 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock mulit_clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+mul_a<0>    |   -0.222(R)|      FAST  |    2.487(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_a<1>    |   -0.089(R)|      FAST  |    2.382(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_a<2>    |   -0.036(R)|      FAST  |    2.470(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_a<3>    |    0.005(R)|      FAST  |    2.280(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_b<0>    |   -0.195(R)|      FAST  |    2.323(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_b<1>    |   -0.187(R)|      FAST  |    2.206(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_b<2>    |   -0.192(R)|      FAST  |    2.307(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mul_b<3>    |   -0.242(R)|      FAST  |    2.265(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+mulit_rst   |    0.640(R)|      FAST  |    1.520(R)|      SLOW  |mulit_clk_BUFGP   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock mulit_clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+mul_out<0>  |         8.349(R)|      SLOW  |         3.498(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<1>  |         8.216(R)|      SLOW  |         3.425(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<2>  |         8.221(R)|      SLOW  |         3.438(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<3>  |         8.203(R)|      SLOW  |         3.438(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<4>  |         8.166(R)|      SLOW  |         3.390(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<5>  |         8.211(R)|      SLOW  |         3.408(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<6>  |         8.068(R)|      SLOW  |         3.361(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+mul_out<7>  |         8.246(R)|      SLOW  |         3.471(R)|      FAST  |mulit_clk_BUFGP   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock mulit_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mulit_clk      |    1.408|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Jun 17 11:54:47 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 683 MB
+
+
+
