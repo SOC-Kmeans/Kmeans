@@ -11,7 +11,7 @@
 // Tool versions: 
 // Description: 
 //                 output [31:0] mul_out;         乘法輸出
-//                 input [15:0] mul_a, mul_b;     mul_a 乘法輸入X, mul_b 乘法輸入Y
+//                 input [15:0] mul_a, mul_b;     mul_a 乘法輸入X1 Y1, mul_b 乘法輸入X2 Y2
 //                 input mulit_clk;               時脈
 //                 input mulit_rst;               重置
 // Dependencies: 
