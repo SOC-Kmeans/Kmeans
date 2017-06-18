@@ -36,6 +36,12 @@ SOC-projcet Design <br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Euclidean_distance/Calculation_distance.v">verilog code </a><br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Euclidean_distance/Calculation_distance_tb.v">testbench </a> <br>
 
+
+    	<a href="https://github.com/edittest/Kmeans/tree/master/UnitTest/Euclidean_distance">8.Calculation_center </a>![#f03c15](https://placehold.it/15/f03c15/000000?text=+)   ---incomplete
+<br> 
+* <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Calculation_center/Calculation_center.v">verilog code </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Calculation_center/tb.v">testbench </a> <br>
+
  <三><a href="https://github.com/edittest/Kmeans/tree/master/Simulation"> Simulation </a> ---image<br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/add.png">add </a><br>
 ![image](https://github.com/edittest/Kmeans/blob/master/Simulation/add.png)
