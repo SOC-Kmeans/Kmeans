@@ -1,0 +1,24 @@
+ISim log file
+Running: D:\project\soc\Kmeans\Euclidean_distance\Calculation_distance_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 32.  For instance uut/m1/, width 32 of formal port sum is not equal to width 16 of actual signal minusOut1.
+WARNING:  For instance uut/m1/, width 1 of formal port cin is not equal to width 32 of actual constant.
+WARNING: File "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 32.  For instance uut/m2/, width 32 of formal port sum is not equal to width 16 of actual signal minusOut2.
+WARNING:  For instance uut/m2/, width 1 of formal port cin is not equal to width 32 of actual constant.
+WARNING:  For instance uut/m5/, width 1 of formal port cin is not equal to width 32 of actual constant.
+WARNING: File "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 82.  For instance m6/m1/, width 16 of formal port mul_a is not equal to width 32 of actual variable cnt. 
+WARNING: File "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 82.  For instance m6/m1/, width 16 of formal port mul_b is not equal to width 32 of actual variable cnt. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

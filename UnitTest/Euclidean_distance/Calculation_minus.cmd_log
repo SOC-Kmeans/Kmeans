@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/project/soc/Kmeans/Euclidean_distance/Calculation_minus.xst" -ofn "D:/project/soc/Kmeans/Euclidean_distance/Calculation_minus.syr" 

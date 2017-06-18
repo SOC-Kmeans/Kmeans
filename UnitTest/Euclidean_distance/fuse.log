@@ -1,0 +1,33 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance_tb_isim_beh.exe -prj D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance_tb_beh.prj work.Calculation_distance_tb work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" into library work
+Analyzing Verilog file "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance_tb.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 36: Size mismatch in connection of port <sum>. Formal port size is 32-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 37: Size mismatch in connection of port <sum>. Formal port size is 32-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 40: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance.v" Line 87: Size mismatch in connection of port <mul_a>. Formal port size is 16-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 159592 KB
+Fuse CPU Usage: 171 ms
+Compiling module fa
+Compiling module rccfulladder
+Compiling module Calculation_minus
+Compiling module Calculation_mulit
+Compiling module fa1
+Compiling module Calculation_add
+Compiling module Calculation_div
+Compiling module root
+Compiling module Calculation_distance
+Compiling module Calculation_distance_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable D:/project/soc/Kmeans/Euclidean_distance/Calculation_distance_tb_isim_beh.exe
+Fuse Memory Usage: 163060 KB
+Fuse CPU Usage: 233 ms
