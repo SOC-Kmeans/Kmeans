@@ -4,7 +4,7 @@ SOC-projcet Design <br>
 <br>
  <一>Document      <br>
 <br>
-    	<a href="https://github.com/edittest/Kmeans/blob/master/Document/final_project_kmeans_10_2017_0617.docx"> 1.final_project_kmeans_10_2017_0617.docx </a> --- Proposal Writing<br>
+    	<a href="https://github.com/edittest/Kmeans/blob/master/Document/final_project_kmeans_11_2017_0618.docx"> 1.final_project_kmeans_11_2017_0618.docx </a> --- Proposal Writing<br>
 <br>
  <二><a href="https://github.com/edittest/Kmeans/tree/master/UnitTest"> UnitTest </a> --- Test Writing<br>
 <br> 
@@ -44,6 +44,9 @@ In the 75 line    
 <br> 
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Calculation_center/Calculation_center.v">verilog code </a><br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Calculation_center/tb.v">testbench </a> <br>
+
+    	<a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/vga/vga.v">10.Vga </a>![#f03c15](https://placehold.it/15/f03c15/000000?text=+)   ---incomplete
+<br> 
 
  <三><a href="https://github.com/edittest/Kmeans/tree/master/Simulation"> Simulation </a> ---image<br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/add.png">add </a><br>
