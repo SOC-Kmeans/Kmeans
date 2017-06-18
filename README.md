@@ -32,11 +32,22 @@ SOC-projcet Design <br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/multiply/Calculation_mulit.v">verilog code </a><br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/multiply/Calculation_multi_tb.v">testbench </a> <br>
 
+    	<a href="https://github.com/edittest/Kmeans/tree/master/UnitTest/Euclidean_distance">7.Euclidean_distance </a> <br> 
+* <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Euclidean_distance/Calculation_distance.v">verilog code </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/Euclidean_distance/Calculation_distance_tb.v">testbench </a> <br>
+
  <三><a href="https://github.com/edittest/Kmeans/tree/master/Simulation"> Simulation </a> ---image<br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/add.png">add </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/add.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/div.png">div </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/div.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance.png">Euclidean_distance </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/minus.png">minus </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/minus.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/multiply.png">multiply </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/multiply.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Random_1.png">Random_1 </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/Random_1.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Random_2.png">Random_2 </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/Random_2.png)
