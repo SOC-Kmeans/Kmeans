@@ -53,8 +53,8 @@ In the 75 line    
 ![image](https://github.com/edittest/Kmeans/blob/master/Simulation/add.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/div.png">div </a><br>
 ![image](https://github.com/edittest/Kmeans/blob/master/Simulation/div.png)
-* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance.png">Euclidean_distance </a><br>
-![image](https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance.png)
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance2.png">Euclidean_distance2 </a><br>
+![image](https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance2.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/minus.png">minus </a><br>
 ![image](https://github.com/edittest/Kmeans/blob/master/Simulation/minus.png)
 * <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/multiply.png">multiply </a><br>
