@@ -2,6 +2,11 @@
 # Kmeans
 SOC-projcet Design <br>
 <br>
+    teamwork:<br> 
+        edittest--Proposal Writing and Assist Program <br> 
+        ChenDung--Assist Proposal Writing and Program design <br>
+<br>
+<br>
  <一>Document      <br>
 <br>
     	<a href="https://github.com/edittest/Kmeans/blob/master/Document/final_project_kmeans_11_2017_0618.docx"> 1.final_project_kmeans_11_2017_0618.docx </a> --- Proposal Writing<br>
