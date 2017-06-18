@@ -31,3 +31,12 @@ SOC-projcet Design <br>
     	<a href="https://github.com/edittest/Kmeans/tree/master/UnitTest/multiply">6.multiply </a> <br> 
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/multiply/Calculation_mulit.v">verilog code </a><br>
 * <a href="https://github.com/edittest/Kmeans/blob/master/UnitTest/multiply/Calculation_multi_tb.v">testbench </a> <br>
+
+ <三><a href="https://github.com/edittest/Kmeans/tree/master/Simulation"> Simulation </a> ---image<br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/add.png">add </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/div.png">div </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Euclidean_distance.png">Euclidean_distance </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/minus.png">minus </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/multiply.png">multiply </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Random_1.png">Random_1 </a><br>
+* <a href="https://github.com/edittest/Kmeans/blob/master/Simulation/Random_2.png">Random_2 </a><br>
