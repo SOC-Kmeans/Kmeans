@@ -2,7 +2,7 @@
 # Kmeans
 SOC-projcet Design <br>
 <br>
-    teamwork:<br> 
+    Teamwork:<br> 
         edittest--Proposal Writing and Assist Program <br> 
         ChenDung--Assist Proposal Writing and Program design <br>
 <br>
