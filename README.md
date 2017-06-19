@@ -3,8 +3,8 @@
 SOC-projcet Design <br>
 <br>
     Teamwork:<br> 
-        edittest--Proposal Writing and Assist Program <br> 
-        ChenDung--Assist Proposal Writing and Program design <br>
+    	    	edittest(0252038)--Proposal Writing and Assist Program <br> 
+    	    	ChenDung(0252040)--Assist Proposal Writing and Program design <br>
 <br>
 <br>
  <一>Document      <br>
